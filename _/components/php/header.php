@@ -1,5 +1,3 @@
-<div class="content row">
-	<div class="col-lg-12">
 		<header class="clearfix">
 			<section id="branding">
 				<a href="index.php"><img src="images/misc/ralogo_monogram.png" alt="Logo for Roux Conference"></a>
@@ -31,11 +29,15 @@
 							</ul><!-- dropdown menu -->
 						</li>
 						<li><a href="register.php">Register</a></li>
-					</ul><!-- nav -->
-				</div>
-				
+					</ul><!-- nav -->	
+				</div><!-- container -->			
 			</section><!-- navbar -->
+			
+			<!-- Modal -->
+			<section id="modal" class="modal fade">
+				<div class="modal-body">
+					<img id="modalimage" src="" alt="Modal Photo">
+				</div>
+			</section><!-- modal -->
 
 		</header><!-- header -->
-	</div><!-- column -->
-</div><!-- content -->

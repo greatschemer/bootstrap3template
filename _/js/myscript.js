@@ -1,18 +1,1 @@
-$(function() {
-
-	//highlight the current nav
-	$("#home a:contains('Home')").parent().addClass('active');
-	$("#schedule a:contains('Schedule')").parent().addClass('active');
-	$("#artists a:contains('Artists')").parent().addClass('active');
-	$("#venuetravel a:contains('Venue/Travel')").parent().addClass('active');
-	$("#register a:contains('Register')").parent().addClass('active');
-
-
-	//make menus drop automatically
-	$('ul.nav li.dropdown').hover(function() {
-		$('.dropdown-menu', this).fadeIn();
-	}, function() {
-		$('.dropdown-menu', this).fadeOut('fast');
-	});//hover
-
-}); //jQuery is loaded
+$(function(){var a=window.location.hash;a&&$('ul.nav a[href="'+a+'"]').tab("show"),$("#monday.panel-body").addClass("in"),$("#artists #tuesday.panel-body").addClass("in"),$("#artists #wednesday.panel-body").addClass("in"),$("#artists #thursday.panel-body").addClass("in"),$("#artists #friday.panel-body").addClass("in"),$(".abouttheartists img").addClass("img-circle"),$("aside.photosfromlastyear img").addClass("img-thumbnail"),$(".artistinfo  .photogrid img").addClass("img-circle"),$("#home a:contains('Home')").parent().addClass("active"),$("#schedule a:contains('Schedule')").parent().addClass("active"),$("#artists a:contains('Artists')").parent().addClass("active"),$("#venuetravel a:contains('Venue/Travel')").parent().addClass("active"),$("#register a:contains('Register')").parent().addClass("active"),$("ul.nav li.dropdown").hover(function(){$(".dropdown-menu",this).fadeIn()},function(){$(".dropdown-menu",this).fadeOut("fast")}),$("[data-toggle='tooltip']").tooltip({animation:!0}),$(".modalphotos img").on("click",function(){$("#modal").modal({show:!0});var a=this.src.substr(0,this.src.length-7)+".jpg";$("#modalimage").attr("src",a),$("#modalimage").on("click",function(){$("#modal").modal("hide")})})});
